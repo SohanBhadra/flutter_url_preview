@@ -86,6 +86,22 @@ Container(
 
 > You can customize your textfield as you want
 
+## Parameters
+|Parameter|Type|Description
+|--|--|--
+|controller|TextEditingController|Controller for Textfield
+|imageWidth|int|Width of URL Preview image
+|imageHeight|int|Height of URL Preview image
+|maxLines|int|Number of lines in Textfield
+|keyboardType|TextInputType|Keyboard type for Textfield
+|backgroundColor|Color|Background color of URL Preview,
+|textBoxOuterPadding|EdgeInsets|Padding for URL Preview
+|titleStyle|TextStyle|Styles for preview Title
+|descriptionStyle|TextStyle|Styles for preview Description
+|decoration|InputDecoration|Decoration for TextField
+|leading|Widget|leading widget
+|trailing|Widget|trailing widget
+
 > [Click here for a detailed example](example/lib/main.dart).
 
 
