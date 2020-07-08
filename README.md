@@ -2,8 +2,8 @@
 
 A Flutter package which finds out URL/Link from text and shows preview of the URL/Link.
 
-![Textbox](screenshot/03.png)
-![Result](screenshot/04.png)
+![Textbox](screenshot/03.png | width=540 | height=960)
+![Result](screenshot/04.png | width=540 | height=960)
 
 ## What's unique
 
