@@ -2,6 +2,8 @@
 
 A Flutter package which finds out URL/Link from text and shows preview of the URL/Link.
 
+Language: [English](README.md)
+
 ![Textbox](screenshot/03.png)
 ![Result](screenshot/04.png)
 
@@ -10,6 +12,22 @@ A Flutter package which finds out URL/Link from text and shows preview of the UR
 - provides textfield having leading and trailing widgets
 - places the URL preview where you want to place it (above text)
 - easy to use
+
+## Getting Started
+### Add the following line in your pubspec file
+````
+flutter_url_preview:
+````
+    
+### Get the package by running the command
+````
+flutter packages get
+````
+
+###  Include the widget in your dart file
+````
+import 'package:flutter_url_preview/flutterurlpreview.dart';
+````
 
 ## How to Use
 
