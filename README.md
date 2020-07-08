@@ -2,13 +2,74 @@
 
 A Flutter package which finds out URL/Link from text and shows preview of the URL/Link.
 
-## Getting Started
+![Textbox](screenshot/03.png)
+![Result](screenshot/04.png)
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
+## What's unique
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+- provides textfield having leading and trailing widgets
+- places the URL preview where you want to place it (above text)
+- easy to use
+
+## How to Use
+
+```dart
+Container(
+        child: UrlPreviewTextField(
+          //Create your widget
+          child: Container(),
+          controller: controller,
+          imageWidth: 65,
+          imageHeight: 65,
+          maxLines: null,
+          keyboardType: TextInputType.multiline,
+          backgroundColor: Colors.grey.shade300,
+          textBoxOuterPadding: EdgeInsets.symmetric(vertical: 8.0),
+          titleStyle: TextStyle(
+            fontSize: 16,
+            fontWeight: FontWeight.bold,
+            color: Colors.grey.shade800,
+          ),
+          descriptionStyle: TextStyle(
+            fontSize: 14,
+            fontWeight: FontWeight.normal,
+            color: Colors.grey.shade800,
+          ),
+          decoration: InputDecoration(
+            filled: true,
+            border: OutlineInputBorder(
+                borderRadius: BorderRadius.all(Radius.circular(24.0)),
+                borderSide: BorderSide.none),
+            fillColor: Colors.white,
+            contentPadding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 16.0),
+            hintText: 'Enter your text here...',
+          ),
+
+          //Leading widget for textfield
+          leading: IconButton(
+            icon: Icon(Icons.image),
+            color: Theme.of(context).primaryColor,
+            onPressed: () {
+              //Do your stuff when image button click
+            },
+          ),
+
+          // Trailing widget for textfield
+          trailing: IconButton(
+            icon: Icon(Icons.send),
+            color: Theme.of(context).primaryColor,
+            onPressed: () {
+              //Put your stuff
+            },
+          ),
+        ),
+      ),
+```
+
+> You can customize your textfield as you want
+
+> [Click here for a detailed example](example/lib/main.dart).
+
+
+
+
