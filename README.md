@@ -1,6 +1,6 @@
 # flutter_url_preview
 
-A new Flutter package.
+A Flutter package which finds out URL/Link from text and shows preview of the URL/Link.
 
 ## Getting Started
 
